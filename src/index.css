@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(241, 241, 238);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  background-color: rgb(226, 131, 52);
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+.input {
+  display: flex;
+  align-items: left;
+  margin-top: 10px;
+
+  width: 40%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-left: 30px;
+  font-weight: bold;
+}
+.input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(226, 131, 52);
+  line-height: 29px;
+  color: black;
+  font-family: "arial";
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.btn:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scale3d(0, 1, 1);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.btn-text {
+  margin: 0px 10px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.single-story {
+  padding: none;
+  margin-left: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.story-title {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.story-col {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.story-text {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+.story-btn {
+  display: flex;
+  padding: 0px;
+  margin-left: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 2px;
+}
+.story-link {
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
